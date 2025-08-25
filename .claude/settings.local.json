@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(npm install)",
+      "Bash(npm audit:*)",
+      "Bash(npm test)",
+      "Bash(npm run prettier:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run lint)",
+      "Bash(npm test:*)",
+      "Bash(docker build:*)",
+      "Bash(docker images:*)",
+      "Bash(mv:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(npx tsc:*)",
+      "Bash(timeout 5 npm run dev)",
+      "Bash(true)",
+      "Bash(node:*)",
+      "Bash(rm:*)",
+      "Bash(npm run:*)",
+      "Bash(timeout 10 npm run dev)",
+      "Bash(gtimeout 10 npm start)",
+      "Bash(curl:*)",
+      "Bash(npx eslint:*)",
+      "Bash(mkdir:*)",
+      "Bash(yarn run:*)",
+      "Bash(yarn add @types/compression --dev)",
+      "Bash(yarn install)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
