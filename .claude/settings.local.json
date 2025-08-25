@@ -27,7 +27,11 @@
       "Bash(mkdir:*)",
       "Bash(yarn run:*)",
       "Bash(yarn add @types/compression --dev)",
-      "Bash(yarn install)"
+      "Bash(yarn install)",
+      "Bash(docker-compose up:*)",
+      "Bash(docker compose:*)",
+      "Bash(yarn build)",
+      "Bash(yarn add:*)"
     ],
     "deny": [],
     "ask": []
