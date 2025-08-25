@@ -144,3 +144,15 @@ prisma/migrations/dev.db*
 # Jest
 coverage/
 *.lcov
+
+# TypeScript compiled output
+*.js.map
+*.d.ts.map
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Redis dump
+dump.rdb

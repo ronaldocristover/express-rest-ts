@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { env } from '@/config/env';
 import healthRoutes from './health.route';
-import userRoutes from '@/services/user-service/src/routes/user.route';
+import userRoutes from '../../services/user/src/routes/user.route';
 
 const router = Router();
 

@@ -3,6 +3,7 @@ import bcrypt from 'bcrypt';
 import { database } from '@/config/database';
 import { redisClient } from '@/config/redis';
 import { logger } from '@/config/logger';
+import { CacheKeyBuilder } from '@/utils/cache-key';
 import { 
   CreateUserRequest, 
   UpdateUserRequest, 
@@ -16,11 +17,10 @@ import {
 } from '@/types/errors';
 
 export class UserRepositoryPrisma implements IUserRepository {
-  private readonly CACHE_PREFIX = 'user';
   private readonly CACHE_TTL = 3600;
 
   private getCacheKey(identifier: string, type: 'id' | 'email' = 'id'): string {
-    return `${this.CACHE_PREFIX}:${type}:${identifier}`;
+    return CacheKeyBuilder.user(type, identifier);
   }
 
   private async setCacheUser(user: user): Promise<void> {
